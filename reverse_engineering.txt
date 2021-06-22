@@ -1,0 +1,31 @@
+The initial phase of this project was reverse-engineering how the knob and the oven's 
+control algorithm works. Here are some of the things we learned: 
+
+The knob display is controlled by a single line of the 10-conductor cable that 
+supplies both 6V power and data encoded as serial ASCII at 2400 baud. The line is 
+mostly high, so stable power to run the knob can be derived with low-pass filtering 
+and a large storage capacitor. 
+
+Each of the four digits is a 7-segment display. Only the following subset of ASCII is 
+shown: 0123456789 ABCDEFHIJLNOPTU abcdefhijnortuy, plus some other strange glyphs. 
+
+Characters are sent as 8 bits of data starting with the least significant bit, then a 
+parity bit and one stop bit. Three characters are sent representing the three display 
+positions, followed by a checksum that makes the four bytes sum to zero. It takes 
+about 17 milliseconds to send those four characters, and that sequence is repeated 
+about every 100 milliseconds. If no characters are sent for about 2 seconds, the knob 
+display blanks. 
+
+The mode selection is encoded by the knob into 4 binary bits, of which 10 are valid 
+codes. The detailed encoding is in the source code. 
+
+Activating the up-down temperature toggle switch causes one of two lines to be 
+momentarily grounded. 
+
+When a heating mode like "BAKE" is first activated, the oven goes into a fast-heat 
+mode by turning both heating elements on high. After the first time the heating 
+element goes off, any time it goes on again it will be in a slower-heat mode. 
+
+There can be a delay of as much as ten seconds between the time the oven sees a 
+change in the oven temperature and when the heating element goes on or off. 
+

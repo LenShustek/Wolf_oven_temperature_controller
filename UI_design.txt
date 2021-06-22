@@ -1,0 +1,72 @@
+Wolf temperature controller UI
+
+On startup, the knob flashes "5-5" (Saal-Shustek) 3 times, then shows the reboot count.
+The oven otherwise works as documented by Wolf, except with better temperature control.
+
+But: there are hidden configuration menus for controlling all sorts of things.
+
+   "right" below means turn the knob to "temp up" momentarily.
+   "left" below means turn the knob to "temp down" momentarily.
+
+A fast (<1 second) left-right-left-right sequence of the up/down knob
+when the selector switch is "off" causes configuration mode to start.
+
+   "Con" flashes for 3 seconds, then menu choices are displayed in sequence, 
+   each for 3 seconds. Select a choice with "right".
+   Subdirectories might then be shown, also selected with "right".
+   Numbers can be changed with "right" to go up and "left" to go down. 
+     If held, it will autorepeat in increments of 5.
+     Number entry ends after 3 seconds with no activity.
+   Changes are confirmed by displaying "yAy", and are written to non-volatile memory.
+   
+   This is the menu structure:
+   
+      CAL    Calculation mode (The first one to get a "right" is selected.)
+         pId    proportional-integral-differential (the default)
+           P       PID coefficients, from 0 to 99.9, with a decimal point
+            nnd      assumed between the second and third digits.
+           I         Example: "015" means 1.5 
+            nnd      Defaults are 4.0, 0.5, and 0.1
+           d
+            nnd
+         H1     heuristic 1
+            nnn   H1 duty cycle, from 0% to 100%, default 50%
+         H2     heuristic 2
+         non    none; revert to Wolf temperature control
+         dut    fixed duty cycle mode (for testing)
+            nnn   duty cycle, from 0% to 100%, default 50%
+      dAt      Export recent temperature history data as a CSV file through the knob jack
+               (2400 baud, starting when the mode switch moves momentarily), 
+               or the programming connector (115200 baud), or the debug port (115200 baud).
+      dEL      delta time between temperature history measurements in seconds (default is 10)
+          nnn     1 to 1000
+      CyC      algorithm cycle time in seconds (default is 60)
+          nnn     21 to 300
+      oPt      set options
+          dut     should we display the heating duty cycle on the knob? 
+                    "yE5" or "no" (default)
+          ...   (more to come?)
+      InF      show info 
+                  rEL  release (version): xyz
+      rE5      reset: set all non-volatile options to the defaults, except CPU clock speed
+      rEb      reboot 
+
+There is a special mode for one-time initialization that sets the processor clock speed.
+   Do a fast left-right-left-right, but hold the last right for at least five seconds.
+   If the knob is working, it will flash "CLO" (for "clock") 3 times.
+   We then start with a low frequency and incrementally move to higher frequencies.
+   Signal the correct frequency in one of two ways:
+     - Watch the knob display and/or debugging serial output, and flick the knob left to
+       identify the lowest frequency that works for both, and again after that to identify
+       the first frequency that fails for either. We'll use the average of the two.
+     - Watch an oscilloscope connected to MOSI, and flick right to identify exactly 1 Khz.
+   We store the frequency in EEPROM, and use it from then on at initialization.
+   
+ The 6-pin oven-front connector is the standard IDE programming port for downloading firmware.
+ A compile-time option will send debugging information through the connector as serial ASCII
+ at 115200 baud. The lower left pin is ground, and the lower middle pin is 3V serial data.
+    RESET     CLK      data in
+     GND    data out     +3V
+ 
+ 
+ LJS 5 Apr 2021

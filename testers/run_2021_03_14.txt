@@ -1,0 +1,198 @@
+at   0.0 secs: *** controller started, boot 27
+at   0.0 secs: V1.2.3; oscillator 147 changed to 151
+at   0.0 secs: config V3 read:
+at   0.0 secs:    oscillator 151
+at   0.0 secs:    fixed duty cycle 50%
+at   0.0 secs:    PID coefficients Kp=4.0 Ki=0.5 Kd=0.1
+at   0.0 secs:    do "PID" every 60000 msec
+at   0.0 secs:    record temp every 10000 msec
+at   6.5 secs: RTD fault on try 1: 20
+at   6.6 secs: initial temp is 249F
+at   6.6 secs: setup done
+at   6.7 secs: ovenmode: OFF 
+at  14.2 secs: ovenmode: BAKE
+at  14.3 secs: RTD fault on try 1: 04
+at  14.4 secs: starting "PID"
+at  14.5 secs: did calc: set 350F temp 249F duty cycle 100%, oven dsp "   ", log 0%
+at  14.5 secs: oven on  temp 249 setpoint 350
+at  24.6 secs: ---digital pots busy
+at  47.2 secs: ---digital pots busy
+at  74.6 secs: did calc: set 350F temp 264F duty cycle 100%, oven dsp "265", log 1%
+at 112.8 secs: ---digital pots busy
+at 134.8 secs: did calc: set 350F temp 279F duty cycle 100%, oven dsp "280", log 2%
+at 176.4 secs: ---digital pots busy
+at 184.6 secs: ---digital pots busy
+at 194.9 secs: did calc: set 350F temp 295F duty cycle 100%, oven dsp "295", log 4%
+at 255.0 secs: did calc: set 350F temp 310F duty cycle 100%, oven dsp "310", log 5%
+at 262.8 secs: ---digital pots busy
+at 284.9 secs: TEMPORARY OVEN SHUTOFF
+at 284.9 secs: oven off temp 317 setpoint 350
+at 294.9 secs: oven on  temp 318 setpoint 350
+at 315.1 secs: did calc: set 350F temp 321F duty cycle 100%, oven dsp "321", log 6%
+at 322.2 secs: ---digital pots busy
+at 375.3 secs: did calc: set 350F temp 327F duty cycle 100%, oven dsp "328", log 8%
+at 435.4 secs: did calc: set 350F temp 334F duty cycle 100%, oven dsp "335", log 9%
+at 495.5 secs: PID err=8 dutycycle=100% P=32.000 I=240.000 D=0.570
+at 495.5 secs: did calc: set 350F temp 342F duty cycle 100%, oven dsp "342", log 10%
+at 555.6 secs: PID err=3 dutycycle=100% P=12.000 I=90.000 D=0.008
+at 555.7 secs: did calc: set 350F temp 347F duty cycle 100%, oven dsp "348", log 12%
+at 574.7 secs: ---digital pots busy
+at 601.3 secs: ---digital pots busy
+at 615.8 secs: PID err=-5 dutycycle=0% P=-20.000 I=-150.000 D=0.013
+at 615.8 secs: did calc: set 350F temp 355F duty cycle 0%, oven dsp "355", log 13%
+at 615.8 secs: oven off temp 355 setpoint 350
+at 675.9 secs: PID err=-4 dutycycle=0% P=-16.000 I=-120.000 D=-0.002
+at 676.0 secs: did calc: set 350F temp 354F duty cycle 0%, oven dsp "354", log 14%
+at 730.9 secs: ---digital pots busy
+at 736.1 secs: PID err=-2 dutycycle=0% P=-8.000 I=-60.000 D=-0.003
+at 736.1 secs: did calc: set 350F temp 352F duty cycle 0%, oven dsp "352", log 16%
+at 796.2 secs: PID err=-1 dutycycle=0% P=-4.000 I=-30.000 D=-0.002
+at 796.2 secs: did calc: set 350F temp 351F duty cycle 0%, oven dsp "351", log 17%
+at 856.3 secs: PID err=2 dutycycle=68% P=8.000 I=60.000 D=-0.005
+at 856.3 secs: did calc: set 350F temp 348F duty cycle 68%, oven dsp "349", log 18%
+at 856.4 secs: oven on  temp 348 setpoint 350
+at 897.2 secs: oven off temp 352 setpoint 350
+at 911.7 secs: ---digital pots busy
+at 916.5 secs: PID err=-2 dutycycle=0% P=-8.000 I=-60.000 D=0.007
+at 916.5 secs: did calc: set 350F temp 352F duty cycle 0%, oven dsp "353", log 20%
+at 976.6 secs: PID err=-2 dutycycle=0% P=-8.000 I=-60.000 D=0.000
+at 976.6 secs: did calc: set 350F temp 352F duty cycle 0%, oven dsp "352", log 21%
+at 983.7 secs: ---digital pots busy
+at 1036.7 secs: PID err=1 dutycycle=34% P=4.000 I=30.000 D=-0.005
+at 1036.7 secs: did calc: set 350F temp 349F duty cycle 34%, oven dsp "350", log 22%
+at 1036.8 secs: oven on  temp 349 setpoint 350
+at 1057.2 secs: oven off temp 352 setpoint 350
+at 1096.9 secs: PID err=-2 dutycycle=0% P=-8.000 I=-60.000 D=0.005
+at 1096.9 secs: did calc: set 350F temp 352F duty cycle 0%, oven dsp "352", log 23%
+at 1157.0 secs: PID err=1 dutycycle=34% P=4.000 I=30.000 D=-0.005
+at 1157.0 secs: did calc: set 350F temp 349F duty cycle 34%, oven dsp "350", log 25%
+at 1157.0 secs: oven on  temp 349 setpoint 350
+at 1177.4 secs: oven off temp 352 setpoint 350
+at 1217.1 secs: PID err=-2 dutycycle=0% P=-8.000 I=-60.000 D=0.005
+at 1217.2 secs: did calc: set 350F temp 352F duty cycle 0%, oven dsp "352", log 26%
+at 1277.3 secs: PID err=1 dutycycle=34% P=4.000 I=30.000 D=-0.005
+at 1277.3 secs: did calc: set 350F temp 349F duty cycle 34%, oven dsp "350", log 27%
+at 1277.3 secs: oven on  temp 349 setpoint 350
+at 1292.2 secs: ---digital pots busy
+at 1297.7 secs: oven off temp 352 setpoint 350
+at 1337.4 secs: PID err=-2 dutycycle=0% P=-8.000 I=-60.000 D=0.005
+at 1337.4 secs: did calc: set 350F temp 352F duty cycle 0%, oven dsp "352", log 29%
+at 1397.5 secs: PID err=1 dutycycle=34% P=4.000 I=30.000 D=-0.005
+at 1397.6 secs: did calc: set 350F temp 349F duty cycle 34%, oven dsp "350", log 30%
+at 1397.6 secs: oven on  temp 349 setpoint 350
+at 1418.0 secs: oven off temp 352 setpoint 350
+at 1457.7 secs: PID err=-2 dutycycle=0% P=-8.000 I=-60.000 D=0.005
+at 1457.7 secs: did calc: set 350F temp 352F duty cycle 0%, oven dsp "352", log 31%
+at 1517.8 secs: PID err=1 dutycycle=34% P=4.000 I=30.000 D=-0.005
+at 1517.8 secs: did calc: set 350F temp 349F duty cycle 34%, oven dsp "350", log 33%
+at 1517.8 secs: oven on  temp 349 setpoint 350
+at 1538.2 secs: oven off temp 352 setpoint 350
+at 1578.0 secs: PID err=-1 dutycycle=0% P=-4.000 I=-30.000 D=0.003
+at 1578.0 secs: did calc: set 350F temp 351F duty cycle 0%, oven dsp "351", log 34%
+at 1594.5 secs: setpoint chg to 351
+at 1595.4 secs: setpoint chg to 355
+at 1595.7 secs: setpoint chg to 360
+at 1595.9 secs: setpoint chg to 365
+at 1596.2 secs: setpoint chg to 370
+at 1596.5 secs: setpoint chg to 375
+at 1596.7 secs: setpoint chg to 380
+at 1597.0 secs: setpoint chg to 385
+at 1597.2 secs: setpoint chg to 390
+at 1597.5 secs: setpoint chg to 395
+at 1597.7 secs: setpoint chg to 400
+at 1598.0 secs: setpoint chg to 405
+at 1598.2 secs: setpoint chg to 410
+at 1598.5 secs: setpoint chg to 415
+at 1598.8 secs: setpoint chg to 420
+at 1599.0 secs: setpoint chg to 425
+at 1599.3 secs: setpoint chg to 430
+at 1599.5 secs: setpoint chg to 435
+at 1599.8 secs: setpoint chg to 440
+at 1600.0 secs: setpoint chg to 445
+at 1600.3 secs: setpoint chg to 450
+at 1600.5 secs: setpoint chg to 455
+at 1601.8 secs: setpoint chg to 454
+at 1602.1 secs: setpoint chg to 453
+at 1602.4 secs: setpoint chg to 452
+at 1602.7 secs: setpoint chg to 451
+at 1603.1 secs: setpoint chg to 450
+at 1612.9 secs: ---digital pots busy
+at 1638.1 secs: did calc: set 450F temp 349F duty cycle 100%, oven dsp "350", log 35%
+at 1638.1 secs: oven on  temp 349 setpoint 450
+at 1667.7 secs: setpoint chg to 449
+at 1668.7 secs: setpoint chg to 445
+at 1668.9 secs: setpoint chg to 440
+at 1669.2 secs: setpoint chg to 435
+at 1669.4 secs: setpoint chg to 430
+at 1669.7 secs: setpoint chg to 425
+at 1669.9 secs: setpoint chg to 420
+at 1670.2 secs: setpoint chg to 415
+at 1670.5 secs: setpoint chg to 410
+at 1670.7 secs: setpoint chg to 405
+at 1671.8 secs: setpoint chg to 404
+at 1672.2 secs: setpoint chg to 403
+at 1672.4 secs: setpoint chg to 402
+at 1672.7 secs: setpoint chg to 401
+at 1672.9 secs: setpoint chg to 400
+at 1698.2 secs: did calc: set 400F temp 356F duty cycle 100%, oven dsp "356", log 37%
+at 1758.3 secs: did calc: set 400F temp 363F duty cycle 100%, oven dsp "363", log 38%
+at 1818.3 secs: ---digital pots busy
+at 1818.6 secs: did calc: set 400F temp 369F duty cycle 100%, oven dsp "369", log 39%
+at 1878.7 secs: did calc: set 400F temp 375F duty cycle 100%, oven dsp "376", log 41%
+at 1931.4 secs: ---digital pots busy
+at 1938.9 secs: did calc: set 400F temp 382F duty cycle 100%, oven dsp "382", log 42%
+at 1999.0 secs: PID err=12 dutycycle=100% P=48.000 I=360.000 D=0.062
+at 1999.0 secs: did calc: set 400F temp 388F duty cycle 100%, oven dsp "389", log 43%
+at 2059.1 secs: PID err=5 dutycycle=100% P=20.000 I=150.000 D=0.012
+at 2059.1 secs: did calc: set 400F temp 395F duty cycle 100%, oven dsp "395", log 45%
+at 2119.2 secs: PID err=-1 dutycycle=65% P=-4.000 I=-30.000 D=0.010
+at 2119.2 secs: did calc: set 400F temp 401F duty cycle 65%, oven dsp "401", log 46%
+at 2158.3 secs: oven off temp 405 setpoint 400
+at 2179.4 secs: PID err=-5 dutycycle=0% P=-20.000 I=-150.000 D=0.007
+at 2179.4 secs: did calc: set 400F temp 405F duty cycle 0%, oven dsp "405", log 47%
+at 2220.1 secs: ---digital pots busy
+at 2239.5 secs: PID err=-2 dutycycle=0% P=-8.000 I=-60.000 D=-0.005
+at 2239.5 secs: did calc: set 400F temp 402F duty cycle 0%, oven dsp "403", log 48%
+at 2299.6 secs: PID err=-1 dutycycle=0% P=-4.000 I=-30.000 D=-0.002
+at 2299.6 secs: did calc: set 400F temp 401F duty cycle 0%, oven dsp "401", log 50%
+at 2359.8 secs: PID err=1 dutycycle=34% P=4.000 I=30.000 D=-0.003
+at 2359.8 secs: did calc: set 400F temp 399F duty cycle 34%, oven dsp "399", log 51%
+at 2359.8 secs: oven on  temp 399 setpoint 400
+at 2380.2 secs: oven off temp 401 setpoint 400
+at 2419.9 secs: PID err=0 dutycycle=29% P=0.000 I=0.000 D=0.002
+at 2419.9 secs: did calc: set 400F temp 400F duty cycle 29%, oven dsp "400", log 53%
+at 2419.9 secs: oven on  temp 400 setpoint 400
+at 2437.3 secs: oven off temp 402 setpoint 400
+at 2480.0 secs: PID err=-1 dutycycle=0% P=-4.000 I=-30.000 D=0.002
+at 2480.0 secs: did calc: set 400F temp 401F duty cycle 0%, oven dsp "401", log 54%
+at 2492.2 secs: ---digital pots busy
+at 2540.2 secs: PID err=1 dutycycle=34% P=4.000 I=30.000 D=-0.003
+at 2540.2 secs: did calc: set 400F temp 399F duty cycle 34%, oven dsp "399", log 55%
+at 2540.2 secs: oven on  temp 399 setpoint 400
+at 2560.6 secs: oven off temp 401 setpoint 400
+at 2589.0 secs: ---digital pots busy
+at 2600.3 secs: PID err=0 dutycycle=29% P=0.000 I=0.000 D=0.002
+at 2600.3 secs: did calc: set 400F temp 400F duty cycle 29%, oven dsp "400", log 57%
+at 2600.3 secs: oven on  temp 400 setpoint 400
+at 2617.7 secs: oven off temp 402 setpoint 400
+at 2660.4 secs: PID err=-1 dutycycle=0% P=-4.000 I=-30.000 D=0.002
+at 2660.5 secs: did calc: set 400F temp 401F duty cycle 0%, oven dsp "401", log 58%
+at 2720.6 secs: PID err=1 dutycycle=34% P=4.000 I=30.000 D=-0.003
+at 2720.6 secs: did calc: set 400F temp 399F duty cycle 34%, oven dsp "399", log 59%
+at 2720.6 secs: oven on  temp 399 setpoint 400
+at 2741.0 secs: oven off temp 401 setpoint 400
+at 2780.7 secs: PID err=0 dutycycle=29% P=0.000 I=0.000 D=0.002
+at 2780.7 secs: did calc: set 400F temp 400F duty cycle 29%, oven dsp "400", log 61%
+at 2780.7 secs: oven on  temp 400 setpoint 400
+at 2785.4 secs: ---digital pots busy
+at 2798.1 secs: oven off temp 402 setpoint 400
+at 2840.9 secs: PID err=-1 dutycycle=0% P=-4.000 I=-30.000 D=0.002
+at 2840.9 secs: did calc: set 400F temp 401F duty cycle 0%, oven dsp "401", log 62%
+at 2901.0 secs: PID err=1 dutycycle=34% P=4.000 I=30.000 D=-0.003
+at 2901.0 secs: did calc: set 400F temp 399F duty cycle 34%, oven dsp "399", log 63%
+at 2901.0 secs: oven on  temp 399 setpoint 400
+at 2921.4 secs: oven off temp 401 setpoint 400
+at 2961.1 secs: PID err=0 dutycycle=29% P=0.000 I=0.000 D=0.002
+at 2961.1 secs: did calc: set 400F temp 400F duty cycle 29%, oven dsp "400", log 65%
+at 2961.1 secs: oven on  temp 400 setpoint 400
+at 2971.5 secs: ovenmode: OFF 
